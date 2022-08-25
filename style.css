@@ -1,0 +1,45 @@
+/* Global Criteria */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+   border: 1px solid purple;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: azure;
+}
+
+p {
+    font-size:small ;
+    color: blue;
+}
+
+button {
+    background-color: blueviolet;
+    outline: none;
+    color: azure;
+    font-size: medium;
+}
+
+/* Outer-Container Elements */
+.outer-container {
+    padding: 10px;
+}
+
+/* Top-bar Container */
+.top-bar p {
+    float: right;
+}
+
+/* Inner-Container Elements */
+
+
+/* Quiz Intro Elements */
+
+
+/* Main Code Quiz Info  */
+
