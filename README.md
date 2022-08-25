@@ -43,3 +43,4 @@ The following animation demonstrates the application functionality:
 HTML, CSS, Javascript
 
 ## Deployed Quiz Link
+# Coolest-Code-Quiz
