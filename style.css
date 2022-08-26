@@ -4,29 +4,45 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+  
+  
 
-   border: 1px solid purple;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden;
     background-color: azure;
 }
 
 p {
-    font-size:small ;
-    color: blue;
+    font-size:small;
+    color: green;
 }
 
 button {
     background-color: blueviolet;
     outline: none;
-    color: azure;
     font-size: medium;
+}
+
+h1, h2 {
+    color:rgb(227, 218, 185);
+    text-align: center;
+
+}
+
+li {
+    list-style: none;
 }
 
 /* Outer-Container Elements */
 .outer-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     padding: 10px;
 }
 
@@ -37,9 +53,60 @@ button {
 
 /* Inner-Container Elements */
 
+.inner-container {
+    background: rgb(154, 93, 170);
+    width: 50%;
+    height: 100%;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
 
 /* Quiz Intro Elements */
+.quiz-intro, main {
+    display: none;
+    margin-bottom: 30vh;
+    margin-right: 15%;
+    margin-left: 15%;
+    background-color: rgb(181, 213, 181);
+}
 
+.quiz-intro p {
+    text-align: center;
+}
+
+.quiz-intro button {
+    display:block;
+    margin: 0 auto;
+}
 
 /* Main Code Quiz Info  */
 
+main {
+    display: block;
+}
+
+/* Question Screen  */
+
+.question-screen {
+    display: none;
+}
+
+/* Finish Screen  */
+
+.quiz-finish-screen {
+    display: none;
+}
+
+/* Highscores Screen */
+
+.highscores-screen {
+    display: block;
+}
+
+.highscores-screen ol {
+    overflow: scroll;
+
+}
