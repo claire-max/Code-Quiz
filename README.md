@@ -35,4 +35,5 @@ The following animation demonstrates the application functionality:
 HTML, CSS, Javascript
 
 ## Deployed Quiz Link
-# Coolest-Code-Quiz
+https://claire-max.github.io/Code-Quiz/
+

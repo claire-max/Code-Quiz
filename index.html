@@ -9,72 +9,56 @@
  </head>
 
 <body>
-     <! ---  Main Outer div --- >
- <div class="outer-container">
+     <! ---  Outer div --- >
+ <div class="container">
 
-     <! --- Top-bar div --- >
-    <div class="top-bar">
-        <button>View Highscores</button>
-        <p>Timer: 00:00</p>
-    </div>
-     <! --- Inner div to center screen --- >
-    <div class="inner-container"> 
+    <div id="startpage">
 
-    <! --- First Section --- >
-        <! ---  Quiz Intro --- >
-        <header class="quiz-intro">
-            <h1>Welcome to the Coolest Code Quiz</h1>
-            <p>The Code Quiz will test your knowledge of material discussed in class!</p>
-            <button>Start Quiz!</button>
-        </header>
-
-        <! --- Main Code Quiz Info --- >
-        <main>
-
-           <! --- Second Section --- >
-           <section class="question-screen">
-            <h2>Question Here</h2>
-            <ul>
-                <! --- Will be generated in Javscript ---  >
-                <li><button>Answer 1</button></li>
-                <li><button>Answer 2</button></li>
-                <li><button>Answer 3</button></li>
-                <li><button>Answer 4</button></li>
-            </ul>
-           </section>
-
-           <! --- Third Section --- >
-        <section class="quiz-finish-screen">
-            <h2>Quiz Completed!</h2>
-            <p>Your Score: 00</p>
-          <div>
-            <label for="">Enter Initials:</label>
-            <input type="text">
-            <button>Submit</button>
-          </div>
-        </section>
-
-        <! --- Fourth Section --- >
-        <section class="highscores-screen">
-            <h2>Highscores:</h2>
-            <ol>
-                <li>CF - 20</li>
-                <li>CF - 30</li>
-                <li>CF - 44</li>
-                <li>CF - 45</li>
-                <li>CF - 50</li>
-                <li>CF - 60</li>
-            </ol>
-            <button>Go Back</button>
-            <button>Clear Highscores</button>
-        </section>
-        </main>
-
+        <h1>Welcome to the Code Quiz!</h1>
+        <p>The Code Quiz will test your knowledge of material discussed in class!</p>
+        <button id="startbtn">Start Code Quiz!</button>
+        <button id="startPageHighscores" onclick="showHighscores()">Highscores</button>
     </div>
 
- </div> 
- <script type="text/javascript" src="./script.js">
- </script>
+
+     <! ---  --- >
+    <div id="quiz">
+        <div id="timer">Time left: </div>
+        <div id="questions"><p>Questions</p></div>
+           <button id="a" onclick="checkAnswer ('a')">A</button>
+           <button id="b" onclick="checkAnswer ('b')">B</button>
+           <button id="c" onclick="checkAnswer ('c')">C</button>
+           <button id="d" onclick="checkAnswer ('d')">D</button>
+        <div id="result"></div>
+    </div>
+  
+    <div id="gameover">
+        <div id="finalScore"></div>
+        <input type="text" size = "50" placeholder="Please enter your initials for Highscore" name="initials" id="initials"/>
+        <button id="submitScore">Submit Score</button>
+    </div>
+
+    <div id="highscoreContainer">
+    <div id="high-scorePage">
+        <div id="highscore-header">
+            <h2>Initials</h2>
+            <h2>Your Score</h2>
+        </div>
+        <div id="highscore-initials"></div>
+        <div id="highscore-score"></div>
+    </div>
+    <div id="endGameBtns">
+        <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+        <button id="clearHighscore" onclick="ClearScore()">Clear Highscores</button>
+    </div>
+   </div>
+   </div>
+   <script src="./script.js"></script>
 
 </body>
 </html>
+
+
+
+
+
