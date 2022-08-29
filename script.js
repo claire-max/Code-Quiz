@@ -25,11 +25,11 @@ var buttonD = document.getElementById("d");
 // Code Quiz Questions
 var quizQuestions = [{
     question: "What does HTML stand for?",
-    choiceA: "Hyperlinkss and Text Markup Language",
+    choiceA: "Hyperlinks and Text Markup Language",
     choiceB: "Hyper Text Markup Language",
     choiceC: "Home Tool Markup Language",
     choiceD: "Help Team Markup Link",
-    correctAnswer: "a"},
+    correctAnswer: "b"},
   {
     question: "What does DOM stand for?",
     choiceA: "Document Object Model",
@@ -63,7 +63,7 @@ var quizQuestions = [{
     choiceA: "Winter Will Wonder",
     choiceB: "Weak Winter Wind",
     choiceC: "World Wide Web",
-    choiceD: "We Waant Waffers",
+    choiceD: "We Want Waffers",
     correctAnswer: "c"},
     {
     question: "What HTML attribute references an external JavaScript file?",
